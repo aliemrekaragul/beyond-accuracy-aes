@@ -11,11 +11,15 @@ This is an implementation of the paper "Beyond Accuracy: Using Multi-facet Rasch
    ```bash
    python -m spacy download en_core_web_sm
    ```
-4. **Run the training script**:
-You can run all the scripts with default parameters to reproduce the results in the paper. To manipulate the parameters, see the help message for each script by running `python scripts/<script_name>.py --help`.
+4. **Run the scripts**:
+You can run all the scripts with default parameters to reproduce the results in the paper. Run the scripts in the same order as in the Usage section.
+
+To manipulate the parameters, see the help message for each script by running `python scripts/<script_name>.py --help`.
+
+In order to obtain the evaluation results, you need to run `evaluate.py`. It will save the evaluation results (QWK stats) in `outputs/evaluation_summary.csv`.
 
 ## Usage
-The scripts should be run in the given order as the training scripts require the output of the feature extraction scripts.
+The scripts should be run in the same order because the training scripts require the output of the feature extraction scripts.
 
 ### To calculate hand crafted features with default parameters run:
 
@@ -45,8 +49,12 @@ python scripts/train_bert_lstm.py
 This will save the model in `models/final_lstm_model.pt`
 Also, the predictions will be saved into `ouptuts/lstm_predictions.pt`
 
-### To evaluate the model with default parameters run:
+### To evaluate the models with default parameters run:
 ```
 python scripts/evaluate.py
 ```
 This will save the evaluation results (QWK stats) in `outputs/evaluation_summary.csv`
+
+## Multi-facet Rasch Model Analysis
+`mfrm` directory contains the FACETS model definitions. You can simply drag and drop the `.txt` files into the FACETS software to run the analysis. 
+The free version of Facets (MINIFAC) will not be able to run the analysis with the complete datasets. The full version of Facets with license can be obtained from https://www.winsteps.com/facets.htm 
