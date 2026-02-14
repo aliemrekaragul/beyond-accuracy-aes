@@ -1,5 +1,7 @@
-# Beyond Accuracy: Automated Essay Scoring
+# Beyond Accuracy: Using Multi-facet Rasch Measurement Model to Validate Automated Essay Scoring in Analytical Writing Assessment
 This is an implementation of the paper "Beyond Accuracy: Using Multi-facet Rasch Measurement Model to Validate Automated Essay Scoring in Analytical Writing Assessment".
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18641673.svg)](https://doi.org/10.5281/zenodo.18641673)
 ## Setup and Installation
 
 1. **Clone the repository**.
