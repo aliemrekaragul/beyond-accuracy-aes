@@ -13,8 +13,8 @@ Labels=
 *
 2, rater
 1-2
-1=puanlayıcı-1
-2=puanlayıcı-2
+1=human-1
+2=human-2
 *
 3, items
 1-4
