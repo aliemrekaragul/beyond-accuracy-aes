@@ -1,0 +1,15 @@
+pandas
+numpy
+scikit-learn
+scipy
+torch
+transformers
+tqdm
+textstat
+pyspellchecker
+spacy
+joblib
+tabulate
+
+# Note: After installing requirements, you must also download the spaCy model:
+# python -m spacy download en_core_web_sm
